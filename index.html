@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>To Do List</title>
+</head>
+<body onload="loadInitTasksToTheArray()">
+	<div class="mainContainer">
+		<div class="inputDiv"> 
+			<input type="Text" id="taskInput"  autofocus placeholder="Add Task" name="TaskName" class="TaskInput">
+			<input type="button" name="AddTask" id="AddTask" class="AddTaskBTN" value="+">
+		</div>
+		<div class="tasksContainer">
+			<div class="incompletedTasks tasksTypeContainer">
+				<p class="tasksHolderTitle">Your Tasks!</p>
+				<div class="tasksHolder" id="completedTasksHolder">
+					<div class="task1 task">
+						<div class="taskDetails">
+							<input type="checkbox" id="task1">
+							<label for="task1">Your Completed Task</label>
+						</div>
+
+						<div class="tasksBtns-container">
+							<input type="button" class="tasksBtns" name="" value="Edit Task">
+							<input type="button" class="tasksBtns" name="" value="Del">
+						</div>
+
+					</div>
+				</div>
+
+				
+			</div>
+			<div class="completedTasks tasksTypeContainer">
+				<p class="tasksHolderTitle">Your Completed Task!</p>
+				<div class="tasksHolder" id="inCompletedTasksHolder">
+					<div class="inc-task1 task">
+						<div class="taskDetails">
+							<input type="checkbox" disabled checked id="inc-task1">
+							<label for="inc-task1"><del>Your Completed Task!</del></label>
+						</div>
+
+						<div class="tasksBtns-container">
+							<input type="button" class="tasksBtns" disabled name="" value="Edit Task">
+							<input type="button" class="tasksBtns" disabled name="" value="Del">
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
